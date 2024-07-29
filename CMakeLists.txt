@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.25)
 
-set(PROJECT_NAME vscode)
+set(PROJECT_NAME First_opengl_example)
 set(CMAKE_CXX_STANDARD 17)
 
-set(WINDOW_NAME "Hello, OpenGL!")
+set(WINDOW_NAME "First_opengl_example")
 set(WINDOW_WIDTH 960)
 set(WINDOW_HEIGHT 540)
 

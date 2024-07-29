@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{95EBE2DE-08D6-3F3C-8880-2E4D894CB4AC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>First_opengl_example</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Public\first_opengl_example\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">First_opengl_example.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">First_opengl_example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Public\first_opengl_example\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">First_opengl_example.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">First_opengl_example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Public\first_opengl_example\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">First_opengl_example.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">First_opengl_example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Public\first_opengl_example\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">First_opengl_example.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">First_opengl_example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WINDOW_NAME="First_opengl_example";WINDOW_WIDTH=960;WINDOW_HEIGHT=540;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WINDOW_NAME=\"First_opengl_example\";WINDOW_WIDTH=960;WINDOW_HEIGHT=540;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>spdlogd.lib;glfw3.lib;glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Public/first_opengl_example/build/install/lib;C:/Users/Public/first_opengl_example/build/install/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Public/first_opengl_example/build/Debug/First_opengl_example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Public/first_opengl_example/build/Debug/First_opengl_example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME="First_opengl_example";WINDOW_WIDTH=960;WINDOW_HEIGHT=540;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME=\"First_opengl_example\";WINDOW_WIDTH=960;WINDOW_HEIGHT=540;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>spdlog.lib;glfw3.lib;glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Public/first_opengl_example/build/install/lib;C:/Users/Public/first_opengl_example/build/install/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Public/first_opengl_example/build/Release/First_opengl_example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Public/first_opengl_example/build/Release/First_opengl_example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME="First_opengl_example";WINDOW_WIDTH=960;WINDOW_HEIGHT=540;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME=\"First_opengl_example\";WINDOW_WIDTH=960;WINDOW_HEIGHT=540;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>spdlog.lib;glfw3.lib;glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Public/first_opengl_example/build/install/lib;C:/Users/Public/first_opengl_example/build/install/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Public/first_opengl_example/build/MinSizeRel/First_opengl_example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Public/first_opengl_example/build/MinSizeRel/First_opengl_example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME="First_opengl_example";WINDOW_WIDTH=960;WINDOW_HEIGHT=540;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME=\"First_opengl_example\";WINDOW_WIDTH=960;WINDOW_HEIGHT=540;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Public\first_opengl_example\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>spdlog.lib;glfw3.lib;glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Public/first_opengl_example/build/install/lib;C:/Users/Public/first_opengl_example/build/install/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Public/first_opengl_example/build/RelWithDebInfo/First_opengl_example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Public/first_opengl_example/build/RelWithDebInfo/First_opengl_example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Public\first_opengl_example\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Public/first_opengl_example/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Public/first_opengl_example -BC:/Users/Public/first_opengl_example/build --check-stamp-file C:/Users/Public/first_opengl_example/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Public\first_opengl_example\Dependency.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\Public\first_opengl_example\build\dep_glad-prefix\tmp\dep_glad-mkdirs.cmake;C:\Users\Public\first_opengl_example\build\dep_glfw-prefix\tmp\dep_glfw-mkdirs.cmake;C:\Users\Public\first_opengl_example\build\dep_spdlog-prefix\tmp\dep_spdlog-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Public\first_opengl_example\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Public/first_opengl_example/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Public/first_opengl_example -BC:/Users/Public/first_opengl_example/build --check-stamp-file C:/Users/Public/first_opengl_example/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Public\first_opengl_example\Dependency.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\Public\first_opengl_example\build\dep_glad-prefix\tmp\dep_glad-mkdirs.cmake;C:\Users\Public\first_opengl_example\build\dep_glfw-prefix\tmp\dep_glfw-mkdirs.cmake;C:\Users\Public\first_opengl_example\build\dep_spdlog-prefix\tmp\dep_spdlog-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Public\first_opengl_example\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Public/first_opengl_example/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Public/first_opengl_example -BC:/Users/Public/first_opengl_example/build --check-stamp-file C:/Users/Public/first_opengl_example/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Public\first_opengl_example\Dependency.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\Public\first_opengl_example\build\dep_glad-prefix\tmp\dep_glad-mkdirs.cmake;C:\Users\Public\first_opengl_example\build\dep_glfw-prefix\tmp\dep_glfw-mkdirs.cmake;C:\Users\Public\first_opengl_example\build\dep_spdlog-prefix\tmp\dep_spdlog-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Public\first_opengl_example\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Public/first_opengl_example/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Public/first_opengl_example -BC:/Users/Public/first_opengl_example/build --check-stamp-file C:/Users/Public/first_opengl_example/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Public\first_opengl_example\Dependency.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\Public\first_opengl_example\build\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\Public\first_opengl_example\build\dep_glad-prefix\tmp\dep_glad-mkdirs.cmake;C:\Users\Public\first_opengl_example\build\dep_glfw-prefix\tmp\dep_glfw-mkdirs.cmake;C:\Users\Public\first_opengl_example\build\dep_spdlog-prefix\tmp\dep_spdlog-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Public\first_opengl_example\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Public\first_opengl_example\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Public\first_opengl_example\build\ZERO_CHECK.vcxproj">
+      <Project>{70A1A09B-55FF-3D0D-A42D-AA726494EBE8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Public\first_opengl_example\build\dep_glad.vcxproj">
+      <Project>{0BAA4687-CBCF-3659-92DE-89E58BB8F925}</Project>
+      <Name>dep_glad</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Public\first_opengl_example\build\dep_glfw.vcxproj">
+      <Project>{C0127FC6-0DE3-3FBC-97BF-B02673A8B674}</Project>
+      <Name>dep_glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Public\first_opengl_example\build\dep_spdlog.vcxproj">
+      <Project>{5810D6D4-10D3-3A5C-BF2C-71633F067376}</Project>
+      <Name>dep_spdlog</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

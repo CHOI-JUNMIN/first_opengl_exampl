@@ -1,0 +1,32 @@
+^C:\USERS\PUBLIC\FIRST_OPENGL_EXAMPLE\BUILD\DEP_GLAD-PREFIX\SRC\DEP_GLAD-BUILD\CMAKEFILES\2FF6582F1DB9AECAEE1A86465C092397\GLAD.C.RULE
+setlocal
+cd C:\Users\Public\first_opengl_example\build\dep_glad-prefix\src\dep_glad
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\최준민\AppData\Local\Programs\Python\Python312\python.exe -m glad --profile=compatibility --out-path=C:/Users/Public/first_opengl_example/build/dep_glad-prefix/src/dep_glad-build --api= --generator=c --extensions= --spec=gl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PUBLIC\FIRST_OPENGL_EXAMPLE\BUILD\DEP_GLAD-PREFIX\SRC\DEP_GLAD-BUILD\CMAKEFILES\F32AFEA3416BC3F0AC60D161F987E12F\GLAD-GENERATE-FILES.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PUBLIC\FIRST_OPENGL_EXAMPLE\BUILD\DEP_GLAD-PREFIX\SRC\DEP_GLAD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Public/first_opengl_example/build/dep_glad-prefix/src/dep_glad -BC:/Users/Public/first_opengl_example/build/dep_glad-prefix/src/dep_glad-build --check-stamp-file C:/Users/Public/first_opengl_example/build/dep_glad-prefix/src/dep_glad-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

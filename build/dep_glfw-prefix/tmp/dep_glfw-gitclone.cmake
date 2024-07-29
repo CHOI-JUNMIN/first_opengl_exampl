@@ -52,13 +52,13 @@ endif()
 
 execute_process(
   COMMAND "C:/Program Files/Git/cmd/git.exe"
-          checkout "3.3.3" --
+          checkout "3.4" --
   WORKING_DIRECTORY "C:/Users/Public/first_opengl_example/build/dep_glfw-prefix/src/dep_glfw"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: '3.3.3'")
+  message(FATAL_ERROR "Failed to checkout tag: '3.4'")
 endif()
 
 set(init_submodules TRUE)
